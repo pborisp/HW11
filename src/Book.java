@@ -32,4 +32,5 @@ public class Book {
     public int setYearPublication(int yearPublication) {
         this.yearPublication = yearPublication;
     }
+
 }

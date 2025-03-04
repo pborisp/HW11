@@ -24,4 +24,5 @@ public class Author {
     public String setLastName(String lastName) {
         this.lastName = lastName;
     }
+
 }
