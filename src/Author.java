@@ -16,12 +16,4 @@ public class Author {
     public String getLastName() {
         return lastName;
     }
-
-    public String setFirstName(String firstName) {
-        this.firstName = firstName;
-    }
-
-    public String setLastName(String lastName) {
-        this.lastName = lastName;
-    }
 }

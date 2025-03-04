@@ -9,6 +9,10 @@ public class Book {
         this.yearPublication = yearPublication;
     }
 
+    public Book(String nameBook, int yearPublication) {
+        this(nameBook, null, yearPublication);
+    }
+
     public String getNameBook() {
         return nameBook;
     }
@@ -21,15 +25,7 @@ public class Book {
         return yearPublication;
     }
 
-    public String setNameBook(String nameBook) {
-        this.nameBook = nameBook;
-    }
-
-    public Author setAuthor(Author author) {
-        this.author = author;
-    }
-
-    public int setYearPublication(int yearPublication) {
+    public void setYearPublication(int yearPublication) {
         this.yearPublication = yearPublication;
     }
 }
