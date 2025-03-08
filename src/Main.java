@@ -4,9 +4,9 @@ public class Main {
         Book finansist = new Book("Финансист", teodorDrizer, 1912);
         Author adityaBhargava = new Author("Адитья", "Бхаргава");
         Book grokaemAlgoritms = new Book("Грокаем алгоритмы 2", adityaBhargava, 2024);
-        System.out.println(finansist.getNameBook() + " " + teodorDrizer.getFirstName() + " " + teodorDrizer.getLastName() + " " + finansist.getYearPublication());
-        System.out.println(grokaemAlgoritms.getNameBook() + " " + adityaBhargava.getFirstName() + " " + adityaBhargava.getLastName() + " " + grokaemAlgoritms.getYearPublication());
+        System.out.println(finansist.toString());
+        System.out.println(grokaemAlgoritms.toString());
         grokaemAlgoritms.setYearPublication(2019);
-        System.out.println(grokaemAlgoritms.getNameBook() + " " + adityaBhargava.getFirstName() + " " + adityaBhargava.getLastName() + " " + grokaemAlgoritms.getYearPublication());
+        System.out.println(grokaemAlgoritms.toString());
     }
 }

@@ -1,5 +1,7 @@
 import org.w3c.dom.DOMStringList;
 
+import java.util.Objects;
+
 public class Author {
     private String firstName;
     private String lastName;
@@ -15,5 +17,25 @@ public class Author {
 
     public String getLastName() {
         return lastName;
+    }
+
+    @Override
+    public String toString() {
+        return "Author{" +
+                "firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (o == null || getClass() != o.getClass()) return false;
+        Author author = (Author) o;
+        return Objects.equals(lastName, author.lastName);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hashCode(lastName);
     }
 }
